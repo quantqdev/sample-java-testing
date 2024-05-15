@@ -52,7 +52,8 @@ public class ComparatorTest {
         final String actual = comparator.compare(1, 2);
 
         // assert / then
-        Assertions.assertEquals("1 is less than 2", actual);
+        // Assertions.assertEquals("1 is less than 2", actual);
+        org.assertj.core.api.Assertions.assertThat(actual).isEqualTo("1 is less than 2");
     }
 
 }
